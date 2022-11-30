@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* 
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
+
+         
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+
+        .especial {
+            background-color: rgba(221, 37, 37, 0.541);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a target="_blank" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkxjN2FiM3I4WmpOS1ZTRUliUFEyYWdvdzQxQXxBQ3Jtc0tuS3pVbXN3RkptUjhKWk8zdUt5NGRwVUw2QWt3Tm5ydk1wQzlYUFlHcHJ6WHNlVklZN3pFcmQtRUJ4QUhjQ21aVmNCZnJpNUtaSFdYS0EwbElQRFUwZXAtNnV4cVJ2R3hTeUtTallqTXV2QzRmcW5xdw&q=https%3A%2F%2Fgithub.com%2Fgustavoguanabara%2Fhtml-css%2Ftree%2Fmaster%2Faulas-pdf&v=vMlrcOVr7po">Repositório GitHub</a></li>
+        <li><a class="especial" target="_blank" href="https://www.youtube.com/c/CursoemVídeo">Canal do Youtube</a></li>
+        <li><a target="_blank" href="https://www.cursoemvideo.com">Site do CursoemVideo</a></li>
+    </ul>
+    
+</body>
+</html>
